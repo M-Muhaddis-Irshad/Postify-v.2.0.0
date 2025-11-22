@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Postify v2.0 | Home </title>
+
+    <!-- My CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Main Css Link -->
+    <link rel="stylesheet" href="mainCode/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/logo_Imgs/logoFavicon/favicon.ico">
+
+    <!-- Font Awesome Link -->
+    <script src="https://kit.fontawesome.com/bdc08be0ff.js" crossorigin="anonymous"></script>
+
+    <!-- Google Icons Link -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
+    <!-- SweetAlert CSS Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.min.css">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header class="navBar" id="navContainer">
+
+        <div class="logoContainer">
+
+            <a href="index.html">
+                <img src="logo_Imgs/logoFavicon/logo.PNG" alt="Postify Logo" title="Postify" class="Logo">
+            </a>
+
+            <h3 class="logoHeading">
+                Postify
+            </h3>
+
+        </div>
+
+        <div class="navbarToggler" id="toggleBar">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </div>
+
+        <div class="navLinksContainer" id="navLinksContainer">
+
+            <a class="navLinks" href="index.html">Home</a>
+            <a class="navLinks" href="allPages/posts/posts.html">Posts</a>
+
+            <span id="loginBtn">
+                <a class="navLinks" href="allPages/authLcl/auth.html"> Login <svg class="portal"></svg>
+                </a>
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section____________________________________________________________ -->
+
+    <section class="hero_section">
+        <video autoplay muted loop playsinline class="bg_video actl_video" height="400px">
+            <source src="Imgs_Videos/videos/ThreeDoctors.webm" type="video/mp4" class="actl_video">
+        </video>
+
+        <div class="video_overlay"></div>
+
+        <div class="hero_content">
+            <h1>
+                Welcome to <span>CareNest</span>
+            </h1>
+            <p>Your trusted partner for health and wellness.</p>
+            <a href="allPages/appointment/appointment.html"><button class="hero_sect_btn">Book Appointment</button></a>
+        </div>
+    </section>
+
+
+    <main>
+
+        <!-- Information Section Start's________________________________________ -->
+
+        <section class="infoSect">
+            <div class="infoCrd infoCrd1">
+
+                <span class="infoSvg" id="phoneSvg"></span>
+
+                <div class="infoMsgDtl">
+                    <div class="infoMsg">Give us a Call</div>
+
+                    <span class="infoDetail">+92 317-8945612</span>
+                </div>
+
+            </div>
+
+            <div class="infoCrd infoCrd2">
+
+                <span class="infoSvg" id="mailSvg"></span>
+
+                <div class="infoMsgDtl">
+                    <div class="infoMsg">Send us a Message</div>
+
+                    <span class="infoDetail">carenest@gmail.com</span>
+                </div>
+
+            </div>
+
+            <div class="infoCrd infoCrd3">
+
+                <span class="infoSvg" id="locationSvg"></span>
+
+                <div class="infoMsgDtl">
+                    <div class="infoMsg">Visit our Location</div>
+
+                    <span class="infoDetail">4321 XYZ Street</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Information Section End's________________________________________ -->
+
+
+        <!-- Cards Section Start's____________________________________________ -->
+
+        <section class="cardsContainer">
+            <div class="cards card1">
+                <h4>Top Doctors</h4>
+                <span class="spanLorem">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nam iure et reiciendis dolor
+                    aspernatur dignissimos corporis debitis
+                    labore.
+                </span>
+                <button class="button">Read More</button>
+            </div>
+            <div class="cards card2">
+                <h4>24 Hours Service</h4>
+                <span class="spanLorem">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque nam iure et reiciendis dolor
+                    aspernatur dignissimos corporis debitis
+                    labore.
+                </span>
+                <button class="button">Read More</button>
+            </div>
+            <div class="cards card3">
+                <h4>Opening Hours</h4>
+                <div class="timingsContainer">
+                    <div class="actlTimings">
+                        <span class="days">Monday - Friday</span>
+                        <span class="timings">8:00AM - 5:00PM</span>
+                    </div>
+
+                    <div class="actlTimings">
+                        <span class="days">Saturday</span>
+                        <span class="timings">9:30AM - 5:30PM</span>
+                    </div>
+
+                    <div class="actlTimings">
+                        <span class="days">Sunday</span>
+                        <span class="timings">9:30AM - 3:00PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section End's____________________________________________ -->
+
+
+
+
+
+        <!-- About Section 1 Start's____________________________________ -->
+
+        <section class="about">
+            <h2 class="aboutHeading">About CareNest</h2>
+            <span class="aboutPara">
+                CareNest Hospital provides trusted and compassionate care, using modern technology and a skilled
+                multidisciplinary team. We focus on patient safety, quality outcomes, and a seamless experience.
+            </span>
+
+        </section>
+
+        <!-- About Section 1 End's____________________________________ -->
+
+
+
+        <!-- About Section 2 Start's____________________________________ -->
+
+        <section class="aboutCardsContainer">
+
+            <div class="abtCrd abtCrd1">
+                <div class="abtSvg" id="treatment"></div>
+                <div class="abtCrdDiv2">
+                    <h5 class="abtCrdH5">Medical Treatment</h5>
+                    <span class="abtCrdMsg">
+                        Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                        commodo et nec augueique
+                    </span>
+                </div>
+            </div>
+            <div class="abtCrd abtCrd2">
+                <div class="abtSvg" id="starOfLife"></div>
+                <div class="abtCrdDiv2">
+                    <h5 class="abtCrdH5">Emergency Help</h5>
+                    <span class="abtCrdMsg">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel
+                        nibh et elit mollis commodo et nec augueique
+                    </span>
+                </div>
+            </div>
+            <div class="abtCrd abtCrd3">
+                <div class="abtSvg" id="heartRate"></div>
+                <div class="abtCrdDiv2">
+                    <h5 class="abtCrdH5">Medical professionals</h5>
+                    <span class="abtCrdMsg">
+                        Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                        commodo et nec augueique
+                    </span>
+                </div>
+            </div>
+            <div class="abtCrd abtCrd4">
+                <div class="abtSvg" id="stethoscope"></div>
+                <div class="abtCrdDiv2">
+                    <h5 class="abtCrdH5">Qualified Doctors</h5>
+                    <span class="abtCrdMsg">
+                        Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis
+                        commodo et nec augueique
+                    </span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About Section 2 End's____________________________________ -->
+
+    </main>
+
+
+    <!-- Footer Sart's_____________________________________________________________________ -->
+
+    <footer>
+
+        <div class="footerContent">
+            <div class="logoMsg">
+                <a href="index.html" title="CareNest">
+                    <img class="footerLogo ms-5" src="logo_Imgs/logoFavicon/logo.PNG" alt="S.S.B Collections Logo">
+                </a>
+                <p>Where Care Meets Technology</p>
+            </div>
+
+            <div class="quickLinks">
+                <h6 class="footerH6">Quick Links</h6>
+                <ul class="footerLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="allPages/appointment/appointment.html">Appointment</a></li>
+                    <li><a href="allPages/bookings/myBookings.html">My Bookings</a></li>
+                </ul>
+            </div>
+
+            <div class="connectUs">
+                <h6 class="footerH6">Connect Us</h6>
+                <span>Email: info@postify.com</span>
+                <span>Phone: +92 300 1234567</span>
+            </div>
+
+            <div class="followUs">
+                <h6 class="footerH6">Follow Us</h6>
+                <ul class="mediaLinks">
+                    <li><a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/muhaddis_irshad/?utm_source=qr&igsh=OGJuOG91MTU2YjE5#"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/923143258849" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyRightDiv">
+
+            <!-- <i class="fa-regular fa-copyright"></i> -->
+            © <span id="year"></span> Postify. All rights reserved.
+
+        </div>
+
+    </footer>
+
+    <!-- Footer End's_____________________________________________________________________ -->
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- SweetAlert JavaScript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Bootstratp JavaScript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- My JavaScript Link -->
+    <script src="app.js"></script>
+
+    <!-- Main/Similar Javascript Link-->
+    <script src="mainCode/main.js"></script>
+
+</body>
+
+</html>

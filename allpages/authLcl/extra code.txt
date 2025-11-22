@@ -1,0 +1,84 @@
+if (localStorage.getItem('User Name') !== null) {
+    Swal.fire({
+        icon: "error",
+        title: `You're already registered with ${localStorage.getItem('User Email')}`,
+        html: `If you want to register again, first delete your previous account by clicking on this <span onclick="del_acnt()"><a href="#"> Delete Account </a></span> and then create a new one.`,
+        // text: "Want to registered again",
+
+    });
+    return;
+}
+
+// Account Delete_____________________________________________
+
+function del_acnt() {
+    localStorage.clear()
+    return;
+}
+
+// Account Delete_____________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const user_data = JSON.parse(localStorage.getItem("All_users")) || [];
+
+// const user_signup_data = {
+//     User_Name: user_name.value,
+//     User_Email: signup_mail.value,
+//     User_Password: signup_password.value
+// }
+
+// user_data.push(user_signup_data);
+
+// const data_in_str = JSON.stringify(user_data);
+// localStorage.setItem("All_users", data_in_str);
+
+// ____________________________________________________________
+
+// for (let i = 0; i < user_data.length; i++) {
+
+//     console.log(user_data[i]);
+
+// }
+
+// _________________________________________________________________________________________
+
+// else if (signup_mail.value === JSON.parse(localStorage.getItem("Users"))) {
+
+// // Get existing users (if any)
+// let users = JSON.parse(localStorage.getItem("Users")) || [];
+
+// // Create new user object
+// let newUser = {
+//     name: user_name.value,
+//     email: signup_mail.value,
+//     password: signup_password.value
+// };
+
+// // Add new user to array
+// users.push(newUser);
+
+// // Save updated array back to localStorage
+// const string_data = JSON.stringify(users);
+// localStorage.setItem("Users", string_data);
+// // localStorage.setItem("Users", JSON.stringify(users));
+
+// // let users = JSON.parse(localStorage.getItem("Users")) || [];
+// // else if (login_mail.value !== JSON.parse(localStorage.getItem("Users"))) {
+// // else if (login_mail.value === localStorage.getItem("User Email") && login_password.value !== JSON.parse(localStorage.getItem("Users"))) {
+// // else if (JSON.parse(localStorage.getItem("Users"))) {
