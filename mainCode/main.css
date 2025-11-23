@@ -160,126 +160,6 @@ body.active {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Hero Section Start's__________________________________________________________ */
-
-.hero_section {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bg_video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* height: 400px; */
-    object-fit: cover;
-    z-index: -2;
-}
-
-.video_overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-
-.hero_content {
-    color: #fff;
-    text-align: center;
-    animation: fadeInUp 1.5s ease forwards;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.hero_content h1 {
-    font-size: 44.8px;
-    margin-bottom: 16px;
-    font-weight: 700;
-}
-
-.hero_content span {
-    color: #00bfff;
-}
-
-.hero_content p {
-    font-size: 16.6px;
-    opacity: 0.9;
-    margin-bottom: 32px;
-}
-
-/* Button */
-
-.hero_sect_btn a {
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
-
-.hero_sect_btn:hover a {
-    color: dodgerblue;
-}
-
-.hero_sect_btn {
-    font-weight: 600;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    border: 1px solid dodgerblue;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    transition: all 0.5s;
-}
-
-.hero_sect_btn:hover {
-    color: dodgerblue;
-    background-color: white;
-    border-color: transparent;
-    transform: scale(1.1);
-}
-
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Hero Section End's__________________________________________________________ */
-
-
-
-
-
-
 /* Main Section Start's______________________________________________________ */
 
 main {
@@ -289,8 +169,6 @@ main {
 }
 
 /* Main Section End's______________________________________________________ */
-
-
 
 
 

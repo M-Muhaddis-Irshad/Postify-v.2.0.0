@@ -1,0 +1,13 @@
+.mainContent {
+    width: 100%;
+    padding: 20px;
+}
+
+.createPostCntnr {
+    width: 500px !important;
+    box-shadow: (0px 2px 5px black);
+}
+
+.userIcon img {
+    width: 40px;
+}

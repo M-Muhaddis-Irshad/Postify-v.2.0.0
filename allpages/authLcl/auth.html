@@ -23,87 +23,91 @@
 
 <body>
 
-    <!-- Sign Up page Start's________________________________________ -->
+    <main class="bodyContent">
 
-    <div class="signup_container" id="signup_box">
+        <!-- Sign Up page Start's________________________________________ -->
 
-        <h1>
-            Signup
-        </h1>
+        <div class="signup_container" id="signup_box">
 
-        <!-- Icons Start's -->
-        <div class="both_pages_icons div_1st">
-            <i class="fa-brands fa-google-plus-g"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-        <!-- Icons Start's -->
+            <h1>
+                Signup
+            </h1>
 
-        <span class="message">
-            or use your email for registeration
-        </span>
-
-        <div class="inputs">
-            <div>
-                <input type="text" placeholder="User Name" name="User Name" id="user_name">
-                <input type="email" placeholder="Email" name="Email" id="user_signup_email">
-                <input type="password" placeholder="Password" name="Password" id="user_signup_password">
-
-                <button onclick="signup_btn()" id="signup_btn" class="both_btns">Sign Up</button>
-
-                <p class="both_fields_quest">
-                    Already have an account? <span onclick="teleporter('sgnup_to_lgn')"><a href="#">Login</a></span>
-                </p>
+            <!-- Icons Start's -->
+            <div class="both_pages_icons div_1st">
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
             </div>
-        </div>
+            <!-- Icons Start's -->
 
-    </div>
+            <span class="message">
+                or use your email for registeration
+            </span>
 
-    <!-- Sign Up page End's________________________________________ -->
+            <div class="inputs">
+                <div>
+                    <input type="text" placeholder="User Name" name="User Name" id="user_name">
+                    <input type="email" placeholder="Email" name="Email" id="user_signup_email">
+                    <input type="password" placeholder="Password" name="Password" id="user_signup_password">
 
+                    <button onclick="signup_btn()" id="signup_btn" class="both_btns">Sign Up</button>
 
-
-    <!-- Login page Start's________________________________________ -->
-
-    <div class="login_container hide" id="login_box">
-
-        <h1>
-            Login
-        </h1>
-
-        <!-- Icons Start's -->
-        <div class="both_pages_icons div_1st">
-            <i class="fa-brands fa-google-plus-g"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-        </div>
-        <!-- Icons Start's -->
-
-        <span class="message">
-            or use your email password
-        </span>
-
-        <div class="inputs">
-            <div>
-                <input type="email" placeholder="Email" name="Email" id="user_login_email">
-                <input type="password" placeholder="Password" name="Password" id="user_login_password">
-
-                <button onclick="login_btn()" id="signup_btn" class="both_btns">Login</button>
-
-                <p class="both_fields_quest">
-                    Don't have an account? <span onclick="teleporter('lgn_to_sgnup')"><a href="#">Sign Up</a></span>
-                </p>
+                    <p class="both_fields_quest">
+                        Already have an account? <span onclick="teleporter('sgnup_to_lgn')"><a href="#">Login</a></span>
+                    </p>
+                </div>
             </div>
+
         </div>
 
-    </div>
+        <!-- Sign Up page End's________________________________________ -->
 
-    <!-- Login page End's________________________________________ -->
+
+
+        <!-- Login page Start's________________________________________ -->
+
+        <div class="login_container hide" id="login_box">
+
+            <h1>
+                Login
+            </h1>
+
+            <!-- Icons Start's -->
+            <div class="both_pages_icons div_1st">
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <!-- Icons Start's -->
+
+            <span class="message">
+                or use your email password
+            </span>
+
+            <div class="inputs">
+                <div>
+                    <input type="email" placeholder="Email" name="Email" id="user_login_email">
+                    <input type="password" placeholder="Password" name="Password" id="user_login_password">
+
+                    <button onclick="login_btn()" id="signup_btn" class="both_btns">Login</button>
+
+                    <p class="both_fields_quest">
+                        Don't have an account? <span onclick="teleporter('lgn_to_sgnup')"><a href="#">Sign Up</a></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Login page End's________________________________________ -->
+
+    </main>
 
     <!-- My Jvascript Link________________________________________ -->
-    <script src="app.js"></script>
+    <script src="auth.js"></script>
 
     <!-- Sweet Alert Javascript Link -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js"></script>

@@ -61,7 +61,9 @@ function signup_btn() {
             draggable: true
         });
 
-        teleporter(params = "sgnup_to_lgn")
+        // teleporter(params = "sgnup_to_lgn")
+
+        window.location.href = "../../index.html";
 
     }
 
@@ -132,6 +134,7 @@ function login_btn() {
             draggable: true
         });
         empty_inputs()
+        window.location.href = '../../index.html';
         return;
     }
 
