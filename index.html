@@ -4,149 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Postify v2.0 | Home </title>
-
-    <!-- My CSS Link -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Main Css Link -->
-    <link rel="stylesheet" href="mainCode/main.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/logo_Imgs/logoFavicon/favicon.ico">
-
-    <!-- Font Awesome Link -->
-    <!-- <script src="https://kit.fontawesome.com/bdc08be0ff.js" crossorigin="anonymous"></script> -->
-
-    <!-- Google Icons Link -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-
-    <!-- SweetAlert CSS Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.min.css">
-
-    <!-- Bootstrap CSS Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
+    <title>Postify | Home</title>
 </head>
 
 <body>
-
-    <header class="navBar" id="navContainer">
-
-        <div class="logoContainer">
-
-            <a href="index.html">
-                <img src="logo_Imgs/logoFavicon/logo.PNG" alt="Postify Logo" title="Postify" class="Logo">
-            </a>
-
-            <h3 class="logoHeading">
+    
+    <nav>
+        <div class="logo">
+            <img src="logo_Imgs/logoFavicon/logo.webp" alt="Postify Logo" title="Postify V-2">
+            <span class="logoName">
                 Postify
-            </h3>
-
-        </div>
-
-        <div class="navbarToggler" id="toggleBar">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar3"></span>
-        </div>
-
-        <div class="navLinksContainer" id="navLinksContainer">
-
-            <a class="navLinks" href="index.html">Home</a>
-            <a class="navLinks" href="allPages/posts/posts.html">Posts</a>
-
-            <span id="loginBtn">
-                <a class="navLinks" href="allPages/authLcl/auth.html"> Login <svg class="portal"></svg>
-                </a>
             </span>
-
+            <span class="searchBar">
+                <input type="search" id="searchBar">
+            </span>
         </div>
-
-    </header>
-
-
-    <main class="mainContent">
-
-        <section class="createPostCntnr">
-
-            <div class="userIcon">
-                <img src="logo_Imgs/pfp/Profile_pic2.png" alt="User Profile Picture">
-                <span id="userDomName"></span>
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer Sart's_____________________________________________________________________ -->
-
-    <footer>
-
-        <div class="footerContent">
-            <div class="logoMsg">
-                <a href="index.html" title="CareNest">
-                    <img class="footerLogo ms-5" src="logo_Imgs/logoFavicon/logo.PNG" alt="S.S.B Collections Logo">
-                </a>
-                <p>Where Care Meets Technology</p>
-            </div>
-
-            <div class="quickLinks">
-                <h6 class="footerH6">Quick Links</h6>
-                <ul class="footerLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="allPages/posts/posts.html">Posts</a></li>
-                </ul>
-            </div>
-
-            <div class="connectUs">
-                <h6 class="footerH6">Connect Us</h6>
-                <span>Email: info@postify.com</span>
-                <span>Phone: +92 300 1234567</span>
-            </div>
-
-            <div class="followUs">
-                <h6 class="footerH6">Follow Us</h6>
-                <ul class="mediaLinks">
-                    <li><a href="https://www.facebook.com/?ref=homescreenpwa" target="_blank"><i
-                                class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/muhaddis_irshad/?utm_source=qr&igsh=OGJuOG91MTU2YjE5#"
-                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://wa.me/923143258849" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="copyRightDiv">
-
-            <!-- <i class="fa-regular fa-copyright"></i> -->
-            © <span id="year"></span> Postify. All rights reserved.
-
-        </div>
-
-    </footer>
-
-    <!-- Footer End's_____________________________________________________________________ -->
-
-    <!-- Supabase CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-    <!-- SweetAlert JavaScript Link -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js"></script>
-
-    <!-- Bootstratp JavaScript Link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-
-    <!-- My JavaScript Link -->
-    <script src="app.js"></script>
-
-    <!-- Main/Similar Javascript Link-->
-    <script src="mainCode/main.js"></script>
+    </nav>
 
 </body>
 
