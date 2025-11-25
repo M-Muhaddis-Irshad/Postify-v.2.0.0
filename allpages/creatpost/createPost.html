@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postify | Home</title>
+    <title>Postify | Create Post</title>
 
     <!-- FavIcon______________________ -->
-    <link rel="shortcut icon" href="logo_Imgs/logoFavicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../logo_Imgs/logoFavicon/favicon.ico" type="image/x-icon">
 
     <!-- Private Css link________________________ -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="createPost.css">
 
     <!-- Main Css link________________________ -->
-    <link rel="stylesheet" href="mainCode/main.css">
+    <link rel="stylesheet" href="../../mainCode/main.css">
 
     <!-- SweetAlert CSS Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.min.css">
@@ -26,18 +26,13 @@
 
 <body>
 
-    <!-- Remaining Time 6:45 hours -->
-    <!-- Remaining Time 4:20 hours -->
-    <!-- Remaining Time 3:57 hours -->
-    <!-- Remaining Time 3:18 hours -->
-
     <!-- Navbar Start's_________________________________ -->
     <nav class="navBar" id="navContainer">
 
         <div class="logoContainer">
 
-            <a href="index.html">
-                <img src="logo_Imgs/logoFavicon/logo.webp" alt="Postify Logo" title="Postify V-2" class="Logo">
+            <a href="../../index.html">
+                <img src="../../logo_Imgs/logoFavicon/logo.webp" alt="Postify Logo" title="Postify V-2" class="Logo">
             </a>
 
             <h3 class="logoHeading">
@@ -58,10 +53,10 @@
 
         <div class="navLinksContainer" id="navLinksContainer">
 
-            <a class="navLinks" href="index.html">Home</a>
-            <a class="navLinks" href="allpages/creatpost/createPost.html">Create Post</a>
+            <a class="navLinks" href="../../index.html">Home</a>
+            <a class="navLinks onPageLink" href="createPost.html">Create Post</a>
             <span id="loginBtn">
-                <a class="navLinks" href="allpages/auth/login/login.html">Login <svg class="portal"></svg>
+                <a class="navLinks" href="../auth/login/login.html">Login <svg class="portal"></svg>
                 </a>
             </span>
 
@@ -70,19 +65,16 @@
     </nav>
     <!-- Navbar End's_________________________________ -->
 
-    <main>
+    <!-- <main>
 
         <div class="postCard">
-            <div class="userIcon_Name_DeleteCntnr">
-                <div class="child_1st">
-                    <img src="logo_Imgs/pfp/Profile_pic2.png" alt="User Icon">
-                    <span id="userPostName"></span>
-                </div>
-                <div class="deletPost"></div>
+            <div class="userIcon_Name">
+                <img src="logo_Imgs/pfp/Profile_pic2.png" alt="User Icon">
+                <span id="userPostName"></span>
             </div>
         </div>
 
-    </main>
+    </main> -->
 
     <!-- SweetAlert JavaScript Link -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js"></script>
@@ -96,7 +88,7 @@
     <script src="app.js"></script>
 
     <!-- Main/Similar Javascript Link-->
-    <script src="mainCode/main.js"></script>
+    <script src="../../mainCode/main.js"></script>
 
 </body>
 

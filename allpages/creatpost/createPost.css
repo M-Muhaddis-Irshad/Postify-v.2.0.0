@@ -1,0 +1,3 @@
+.onPageLink::before {
+    transform: scaleX(1) !important;
+}

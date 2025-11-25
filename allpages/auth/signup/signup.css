@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black !important;
+}
+
+/* Change background & text color on selection_________________________ */
+::selection {
+    background-color: red;
+    color: white;
+}
+
+main {
+    width: 100% !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Details Container_____________________________________ */
+.detailContainere {
+    color: white;
+    width: 480px;
+    /* margin-block: 20vh; */
+    padding: 30px 30px;
+    /* background: linear-gradient(to right, red, blue); */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+h1 {
+    font-size: 45px !important;
+    line-height: 2 !important;
+    margin-bottom: -8px !important;
+}
+
+/* Labels___________________________________________ */
+
+label {
+    position: relative;
+}
+
+
+/* Inputs shadow on focus_________________________________ */
+
+label::before {
+    content: '';
+    background-image: linear-gradient(45deg, red, blue);
+    width: 350px;
+    height: 40px;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+label:focus-within:before {
+    opacity: 1;
+}
+
+/* Inputs___________________________________________ */
+
+#nameInp {
+    background-image: url(../logo_icons/user.svg);
+}
+#emailInp {
+    background-image: url(../logo_icons/envelope.svg);
+}
+
+#passwordInp {
+    background-image: url(../logo_icons/lock.svg);
+}
+
+
+/* Inputs similar design_______________________________________ */
+input {
+    width: 350px;
+    padding: 3px;
+    outline: none;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 3px 4px;
+    padding-left: 30px;
+    transition: all 0.1s;
+}
+
+input:focus {
+    border: 1px solid transparent;
+    transform: scale(1.1);
+}
+
+input.eror {
+    border-color: red;
+    box-shadow: 0px 0px 5px red, inset 0px 0px 10px red;
+    transform: scale(1.1);
+}
+
+/* Inputs error messages________________________________________ */
+.errorMsg {
+    opacity: 0;
+    color: red;
+    text-shadow: 0px 0px 5px red;
+    margin: 5px 0px -10px 5px;
+    transition: all 0.1s;
+}
+
+.errorMsg.showErr {
+    opacity: 1;
+}
+
+.textClip {
+    color: transparent;
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+}
+
+
+/* Register button_________________________________________________ */
+
+.Btn {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 2px 15px;
+    padding-bottom: 4px;
+    border: 1px solid dodgerblue;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+.Btn:hover {
+    background: linear-gradient(to right, red, blue);
+    border-color: black;
+    /* color: dodgerblue; */
+    color: black;
+    transform: scale(1.1);
+}
+
+.Btn:focus {
+    transform: scale(1);
+}
+
+
+/* Container shadow___________________________________ */
+
+.shadow {
+    width: 500px;
+    height: 540px;
+    background-image: linear-gradient(-45deg, red, blue);
+    position: absolute;
+    z-index: -1;
+    filter: blur(25px) !important;
+}
+
+
+/* Both fields quest css start's_______________________________________ */
+
+.both_fields_quest {
+    font-size: 1vw;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.4vw 0.7vw;
+    border-radius: 0.7vw;
+}
+
+/* Both pages quest link Css start's___________________________ */
+
+a {
+    text-decoration: none;
+}
+
+.both_fields_quest span a {
+    position: relative;
+    color: #3388ff;
+    cursor: pointer;
+}
+
+.both_fields_quest span a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.070vw;
+    background-color: #1d6ddf;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease, transform-origin 0s;
+}
+
+.both_fields_quest span a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hide {
+    display: none;
+}
