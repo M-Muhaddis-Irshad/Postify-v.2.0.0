@@ -1,3 +1,92 @@
 .onPageLink::before {
     transform: scaleX(1) !important;
 }
+
+.postCreationCard form {
+    max-width: 60%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 25px;
+
+}
+
+.nameLabel {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 380px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nameInput {
+    width: 250px;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.nameInput:focus {
+    scale: 1.05;
+    margin: 0px 0px 0px 5px;
+}
+
+#postedText {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 5px;
+}
+
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    /* border-width: 2px; */
+    transform: scale(1.05);
+}   
+
+#uploaderLabel {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    font-size: 18px !important;
+    padding: 0px 30px;
+    margin: auto !important;
+    /* max-width: 20% !important; */
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    border-radius: 5px !important;
+    transition: all 0.2s;
+}
+
+button:hover {
+    color: white;
+    transform: scale(1.1);
+    background-color: dodgerblue;
+    border-color: transparent;
+}
+
+button:focus {
+    transform: scale(1);
+}

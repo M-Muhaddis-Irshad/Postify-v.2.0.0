@@ -65,16 +65,33 @@
     </nav>
     <!-- Navbar End's_________________________________ -->
 
-    <!-- <main>
+    <main>
 
-        <div class="postCard">
-            <div class="userIcon_Name">
-                <img src="logo_Imgs/pfp/Profile_pic2.png" alt="User Icon">
-                <span id="userPostName"></span>
-            </div>
+        <div class="postCreationCard">
+            <form>
+
+                <label class="nameLabel">
+                    User Name: <input type="text" class="nameInput" id="userName" placeholder="Enter User Name">
+                </label>
+
+                <label id="postedText">
+                    About Post:
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                </label>
+
+                <label id="uploaderLabel">
+                    Upload An Image:
+                    <input type="file" name="" id="">
+                </label>
+
+                <button>
+                    POST
+                </button>
+
+            </form>
         </div>
 
-    </main> -->
+    </main>
 
     <!-- SweetAlert JavaScript Link -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.22.4/dist/sweetalert2.all.min.js"></script>
@@ -84,11 +101,11 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 
-    <!-- My JavaScript Link -->
-    <script src="app.js"></script>
-
     <!-- Main/Similar Javascript Link-->
     <script src="../../mainCode/main.js"></script>
+
+    <!-- My JavaScript Link -->
+    <script src="createPost.js"></script>
 
 </body>
 

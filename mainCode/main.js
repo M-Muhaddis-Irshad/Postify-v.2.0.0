@@ -69,7 +69,7 @@ function logout() {
 
     // Portal Svg____________________________________________________
 
-    fetch("../icons/Portal.svg")
+    fetch("../../icons/Portal.svg")
         .then(res => res.text())
         .then(data => {
             document.querySelector(".portal").innerHTML = data;
