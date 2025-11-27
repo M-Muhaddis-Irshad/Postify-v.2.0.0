@@ -76,18 +76,21 @@ function register() {
     // Don't add trim() cuz password input doesn't have spaces by default____________________
     localStorage.setItem("User Password", signup_password.value);
 
+    // Successful Login
+    localStorage.setItem("isLoggedIn", "true");
+
     Swal.fire({
         icon: "success",
         title: "Account created successfully!",
         showConfirmButton: false,
-        timer: 1500
+        timer: 1000
     });
 
     setTimeout(() => {
         window.location.href = "../../../index.html";
-    }, 1500);
+    }, 1000);
 
-    empty_inputs();
+    // empty_inputs();
 }
 
 
@@ -104,6 +107,6 @@ function del_acnt() {
     });
 }
 
-const empty_inputs = () => {
-    inpsArr.forEach(inp => inp.value = "");
-};
+// const empty_inputs = () => {
+//     inpsArr.forEach(inp => inp.value = "");
+// };

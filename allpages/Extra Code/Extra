@@ -1,0 +1,163 @@
+    // })
+    
+//     for (let [key, values] of Object.entries(createdPosts)) {
+//         // console.log(key)
+//         const {postingUserName: Name, postDes, postImg} = values
+//         // console.log(values)
+//         console.log(
+//             `
+// Post ${++key} Data:
+// Name: ${Name}
+// Description: ${postDes}
+// Image: ${postImg}
+//             `
+//         )
+    // }
+    
+//         for (let i = 0; i < createdPosts.length; i++) {
+//             const values = createdPosts[i];
+//             const {postingUserName: Name, postDes, postImg} = values
+//             // console.log(values)
+// console.log(
+//             `
+// Post ${i + 1} Data:
+// Name: ${Name}
+// Description: ${postDes}
+// Image: ${postImg}
+//             `
+//         )
+//         }
+
+
+// postDes
+// : 
+// "Test1 Hello1"
+// postImg
+// : 
+// "blob:http://127.0.0.1:5500/8ad5ea03-e102-4db1-9b70-483acf36fcb6"
+// postingUserName
+
+// console.log(createdPosts)
+
+// localStorage.getItem('postObject').forEach(element => {
+//     console.log(element)
+// });
+
+
+// createdPosts.forEach((element, index) => {
+//      console.log(element[index].postingUserName)
+//      console.log(element[index].postDes)
+//     console.log(element[index].postImg)
+        
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if (localStorage.getItem('postChecker') !== null) {
+//     createdPosts.forEach((element, index) => {
+//         // console.log(element)
+//         const { postingUserName: Name, postDes, postImg } = element;
+//         console.log(
+//             `
+// Post ${++index} Data:
+// Name: ${Name}
+// Description: ${postDes}
+// Image: ${postImg}
+//             `
+//         )
+
+//     });
+// }
+
+
+
+
+
+
+
+
+// uplodedImg.addEventListener('change', (event) => {
+//     const selectedFile = event.target.files[0]; // Get the first selected file
+
+//     if (selectedFile) {
+//         // selectedFile is already a Blob (and also a File)
+//         console.log('File Name:', selectedFile.name);
+//         console.log('File Size:', selectedFile.size);
+//         console.log('File Type:', selectedFile.type);
+//         // You can now treat selectedFile as a Blob
+//     }
+// });
+
+// const d = new Date()
+// const hours = d.getHours();
+// const seconds = d.getSeconds();
+// document.getElementById('createTime').innerText = `
+// ${seconds}
+// `
+
+
+
+// console.log('Event Log' + event)
+// console.log('Event.target Log' + event.target)
+// console.log('Event.target.files Log' + event.target.files)
+// console.log('Event.target.files[0] Log' + event.target.files[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//         console.log(
+//             `
+// Post ${++index} Data:
+// Id: ${id}
+// Name: ${Name}
+// Description: ${postDes}
+// Image: ${postImg}
+// Posting Time: ${postingTime}
+//             `
+//         )
+
+
+
+
+
+// for (let i = 0; i < createdPosts.length; i++) {
+//     const element = createdPosts[i];
+
+//     // console.log(element)
+
+//     const idFinder = createdPosts[i].id
+
+//     if (recievedId === idFinder) {
+//         console.log(`${true} At ${i}`)
+//         // const parentDiv = idFinder.parentElement;
+//         // console.log(parentDiv)
+//     }
+// }
