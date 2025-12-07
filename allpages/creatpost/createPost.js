@@ -65,7 +65,7 @@ let lclUrl;
 uplodedImg.addEventListener('change', event => {
     // document.getElementById('uploaderLabel').style.display = 'none';
     const localUrl = URL.createObjectURL(event.target.files[0]);
-    console.log(localUrl)
+    // console.log(localUrl)
     lclUrl = localUrl
     document.getElementById('imgOnDOM').src = localUrl;
     document.getElementById('imgOnDOM').style.display = 'block';
@@ -76,7 +76,7 @@ uplodedImg.addEventListener('change', event => {
 
 
 
-// Posting date & time
+// Posting date & time_________________________________________________
 const d = new Date();
 const full_date = `
                  ${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()} 
@@ -85,7 +85,7 @@ const full_date = `
 
 const post = () => {
 
-// Generate Random Id For Each Posts____________________________
+    // Generate Random Id For Each Posts____________________________
     const randomId = crypto.randomUUID();
 
     const userDOMName = document.getElementById('userName').value;
@@ -159,6 +159,14 @@ const post = () => {
         document.getElementById('postBtn').blur();
     }, 500);
 
+    Swal.fire({
+        icon: "success",
+        title: 'Post created <span class="successMsg">Successfully</span>',
+        // html: `Post created <span class="successMsg">Successfully</span>`,
+        showConfirmButton: false,
+        timer: 1000
+    });
+
     setTimeout(() => {
         window.location.href = "../../index.html";
     }, 1000);
@@ -168,9 +176,9 @@ const post = () => {
 const PostData = JSON.parse(localStorage.getItem('posts'))
 
 if (localStorage.getItem('postChecker') !== null) {
-    PostData.forEach((element, index) => {
-        // console.log(element)
-        const { id, postingUserName: Name, postDes, postImg } = element;
+    PostData.forEach((data, index) => {
+        // console.log(data)
+        const { id, postingUserName: Name, postDes, postImg } = data;
         console.log(
             `
 Post ${++index} Data:

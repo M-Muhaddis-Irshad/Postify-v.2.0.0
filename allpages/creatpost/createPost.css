@@ -99,3 +99,7 @@ button:focus {
 .alertText {
     color: red;
 }
+
+.successMsg {
+    color: green;
+}

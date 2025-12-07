@@ -102,23 +102,27 @@ const deletePost = (recievedId) => {
 
         if (result.isConfirmed) {
 
-            console.log(recievedId)
-
-            const updatedPosts = createdPosts.filter(post => post.id !== recievedId);
+            const updatedPosts = createdPosts.filter(post => {
+                post.id !== recievedId
+                console.log(post)
+        });
             localStorage.setItem('posts', JSON.stringify(updatedPosts));
             console.log(updatedPosts)
 
             createdPosts.length = 0;
             createdPosts.push(updatedPosts)
 
-            // Remove from DOM
-            // const postCard = document.getElementById(`${recievedId}`);
-            // if (postCard) {
-            //     postCard.remove();
-            //     console.log(true);
-            // }
+            // updatedPosts.length = 0;
+            // console.log(updatedPosts)
 
-            retrieve()
+            // Remove from DOM
+            const postCard = document.getElementById(`${recievedId}`);
+            if (postCard) {
+                postCard.remove();
+                // console.log(true);
+            }
+
+            // retrieve()
             // setTimeout(() => {
             //     window.location.reload()
             // }, 2000);
@@ -138,3 +142,14 @@ const deletePost = (recievedId) => {
         }
     });
 }
+
+// deletePost("224a3d44-29b5-421d-ba4f-88a9ad2a145d")
+// deletePost("224a3d44-29b5-421d-ba4f-88a9ad2a145d")
+
+
+// SearchBar Start's________________________________
+const searchBar = document.getElementById('searchBar');
+
+searchBar.addEventListener('change', e => {
+    console.log(e)
+})
